@@ -1,5 +1,5 @@
-Je SUIS ICI Docker-Compose :
-Maintenant que vous avez compris la réelle utilité de Docker, il s’agit de comprendre une fonctionnalité de Docker appelée Compose.
+Je SUIS ICI
+Les commandes essentielles d’un container Docker :
 
 # Inception
 
