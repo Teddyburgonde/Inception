@@ -1,3 +1,6 @@
+Je SUIS ICI Docker-Compose :
+Maintenant que vous avez compris la réelle utilité de Docker, il s’agit de comprendre une fonctionnalité de Docker appelée Compose.
+
 # Inception
 
 **Docker** 
@@ -36,3 +39,6 @@ Tu peux démarrer, arrêter, ou supprimer des conteneurs selon tes besoins.
 
 
 
+**Crédit** 
+
+https://tuto.grademe.fr/inception/#sujet
