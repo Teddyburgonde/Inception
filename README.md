@@ -35,9 +35,18 @@ Tu peux démarrer, arrêter, ou supprimer des conteneurs selon tes besoins.
 **Guide**
 
 1. Création d'un machine virtuel.
-2. Utiliser Docker Compose.
+2. 
+3. Utiliser Docker Compose.
 
 
+**Creation du container NGINX**
+
+```c
+Chemin :
+- srcs/nginx/Dockerfile
+```
+
+FROM debian:buster
 
 **Crédit** 
 
