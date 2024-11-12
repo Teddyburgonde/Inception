@@ -46,7 +46,7 @@ Chemin :
 - srcs/nginx/Dockerfile
 ```
 
-FROM debian:buster
+FROM debian:bullseye
 
 **Crédit** 
 
