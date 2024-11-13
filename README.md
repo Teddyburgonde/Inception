@@ -1,6 +1,3 @@
-Je SUIS ICI
-Les commandes essentielles d’un container Docker :
-
 # Inception
 
 **Docker** 
@@ -34,20 +31,38 @@ Tu peux démarrer, arrêter, ou supprimer des conteneurs selon tes besoins.
 
 **Guide**
 
-1. Création d'un machine virtuel.
-2. 
-3. Utiliser Docker Compose.
+1.Installer docker 
+https://docs.docker.com/engine/install/debian/
+# Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add the repository to Apt sources:
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+puis faire le test
+sudo docker run hello-world
+
+Si cela fonctionne tu devrais voir ceci : 
+
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+c1ec31eb5944: Pull complete 
+Digest: sha256:d211f485f2dd1dee407a80973c8f129f00d54604d2c90732e8e320e5038a0348
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly. 
+
+--------------------------------
 
 
-**Creation du container NGINX**
-
-```c
-Chemin :
-- srcs/nginx/Dockerfile
-```
-
-FROM debian:bullseye
-
-**Crédit** 
-
-https://tuto.grademe.fr/inception/#sujet
