@@ -72,3 +72,17 @@ sudo usermod -aG docker <user>
 newgrp docker
 docker ps
 docker build -t nginx .
+
+ps : chaque modification du Dockerfile tu dois faire un docker build -t nginx .
+ (comme pour un make re)
+
+------------
+recuperer la config de base 
+cd /etc/nginx/nginx.conf
+fais un copier
+
+aller dans le dossier conf puis dans le fichier nginx.conf 
+fais le coller.
+
+-------------
+ 
